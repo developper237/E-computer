@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><span class="points">E</span>-<span class="green">C</span><span class="red">o</span><span class="yellow">m</span>puters</h1>
+
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#products">Produits</a></li>
+                    <li><a href="#cart">Panier</a></li>
+                    <li><a href="#payment">Payer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="products" class="products-section">
+            <h2>Bienvenue chez E-computer, le magasin en ligne le plus célèbre d'Afrique!!!</h2><br>
+            <h2>nos produits</h2><hr>
+            <div class="products-container">
+                <!-- Sample Product -->
+                <div class="product-card">
+                    <img src="téléchargement (1).jpeg" alt="Product Image">
+                    <h3>Pack Apple</h3>
+                    <p>$6500.00</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="téléchargement (5).jpeg" alt="Product Image">
+                    <h3>PC LENOVO</h3>
+                    <p>$800.00</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="téléchargement (7).jpeg" alt="Product Image">
+                    <h3>Honor 3X</h3>
+                    <p>$300.00</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="téléchargement (8).jpeg" alt="Product Image">
+                    <h3>Samsung S24</h3>
+                    <p>$230.00</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="téléchargement (9).jpeg" alt="Product Image">
+                    <h3>Smartphone 2024</h3>
+                    <p>$270.00</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="téléchargement (10).jpeg" alt="Product Image">
+                    <h3>Samsung galaxy S24 black</h3>
+                    <p>$299.00</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="téléchargement (11).jpeg" alt="Product Image">
+                    <h3>Huawei P60</h3>
+                    <p>$250.00</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="images (6).jpeg" alt="Product Image">
+                    <h3>Moniteur HD</h3>
+                    <p>$350.00</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="téléchargement (14).jpeg" alt="Product Image">
+                    <h3>Iphone 15 pro</h3>
+                    <p>$2000.00</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <div class="product-card">
+                    <img src="téléchargement (19).jpeg" alt="Product Image">
+                    <h3>Iphone SE 2020</h3>
+                    <p>$400.00</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+
+        <section id="cart" class="cart-section">
+            <h2>VOTRE PANIER</h2>
+            <div class="cart-container">
+                <p>votre panier est vide.</p>
+                <ul class="cart-items">
+                    <!-- Items will be dynamically added here -->
+                </ul>
+                <p class="cart-total">Total: $0.00</p>
+                <button class="checkout">Checkout</button>
+            </div>
+        </section>
+    </main>
+    <section id="payment" class="payment-section">
+        <div class="container">
+            <h2>Payement</h2>
+            <form class="payment-form">
+                <div class="form-group">
+                    <label for="name">Nom sur la Carte</label>
+                    <input type="text" id="name" placeholder="serge nde" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Numero de carte </label>
+                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry">Date d'expiration</label>
+                        <input type="text" id="expiry" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                </div>
+                <button type="submit" class="pay-button">Payer maintenant</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SERGE NDE. Tous droits reservés.</p>
+        </div>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>
